@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1461ad"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/actionbar_height"
+        android:background="#00000000"
+        android:orientation="horizontal" >
+
+            <LinearLayout
+                android:id="@+id/fragment_canvas_title_block"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/fragment_canvas_title"
+                    android:layout_width="@dimen/zero"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:lines="1"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/canvas_title_text_size" />
+            </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/separator"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerVertical="true"
+        android:background="@color/divider_top" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/zero"
+        android:layout_weight="1"
+        android:background="#00000000" >
+    </android.support.v4.view.ViewPager>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/tabbar_height"
+        android:background="#00000000"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/tab_missed"
+            android:layout_width="@dimen/zero"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="@dimen/icon_tab"
+                android:layout_height="@dimen/icon_tab"
+                android:id="@+id/imMissed" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_divide"
+            android:layout_marginTop="@dimen/margin_divide"
+            android:background="@color/divider_tab_bottom" />
+
+        <LinearLayout
+            android:id="@+id/tab_received"
+            android:layout_width="@dimen/zero"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="@dimen/icon_tab"
+                android:layout_height="@dimen/icon_tab"
+                android:id="@+id/imReceived"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_divide"
+            android:layout_marginTop="@dimen/margin_divide"
+            android:background="@color/divider_tab_bottom" />
+
+        <LinearLayout
+            android:id="@+id/tab_dialed"
+            android:layout_width="@dimen/zero"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="@dimen/icon_tab"
+                android:layout_height="@dimen/icon_tab"
+                android:id="@+id/imDialed"/>
+        </LinearLayout>
+        <View
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_divide"
+            android:layout_marginTop="@dimen/margin_divide"
+            android:background="@color/divider_tab_bottom" />
+
+        <LinearLayout
+            android:id="@+id/tab_total"
+            android:layout_width="@dimen/zero"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="@dimen/icon_tab"
+                android:layout_height="@dimen/icon_tab"
+                android:id="@+id/imTotal"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
