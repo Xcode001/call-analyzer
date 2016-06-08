@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/CallHistoryAnalyzer.iml" filepath="$PROJECT_DIR$/CallHistoryAnalyzer.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/call-analyzer.iml" filepath="$PROJECT_DIR$/call-analyzer.iml" />
     </modules>
   </component>
 </project>
